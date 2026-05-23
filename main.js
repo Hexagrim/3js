@@ -17,7 +17,7 @@ function createTextTexture(text, textColor) {
     const ctx = canvas.getContext("2d");
 
     ctx.clearRect(0, 0, canvas.width, canvas.height)
-    ctx.font= "800 90px 'Cinzel Decorative', serif"
+    ctx.font= "800 90px 'Trebuchet MS'"
     ctx.fillStyle = textColor;
     ctx.textAlign = "center"
     ctx.textBaseline = "middle"
