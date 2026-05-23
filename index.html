@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HexaGrim Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            background: #000000; color: #fff;
+            font-family: sans-serif; 
+            overflow-x: hidden;
+        }
+        #canvas-container { 
+            position: fixed; 
+            top: 0; 
+            left: 0;
+            width: 100%; 
+            height: 100%; 
+            z-index: 1;
+        }
+        .content { 
+            position: relative;
+            z-index: 2; 
+        }
+        .hero {
+             height: 70vh; 
+        }
+        .info { 
+            padding: 50px; 
+            backdrop-filter: blur(10px);
+            background: rgba(0, 0, 0, 0.294);
+            text-align: center; max-width: 600px;
+            margin: auto; border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.183);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.855);
+        }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+    <div id="canvas-container"></div>
+
+    <div class="content">
+
+        <section class="hero"></section>
+
+        <section class="info">
+            <h2>The guy who makes games!</h2>
+            <p>I make silly games and upload them on my <a href="https://hexagrim.itch.io">Itch Page</a></p>
+        </section>
+    </div>
+    <script src="main.js"></script>
+
+</body>
+
+
+</html>
